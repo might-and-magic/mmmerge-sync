@@ -17,8 +17,8 @@ jobs:
   #     - name: repo-sync
   #       uses: repo-sync/github-sync@v2
   #       with:
-  #         source_repo: "https://gitlab.com/templayer/mmmerge.git"
-  #         source_branch: "rodril-fixes"
+  #         source_repo: "https://gitlab.com/letr.rod/mmmerge.git"
+  #         source_branch: "Rodril_nightly_build"
   #         destination_branch: "sync"
   #         github_token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -32,8 +32,8 @@ jobs:
       - name: git-sync
         uses: wei/git-sync@v3
         with:
-          source_repo: "https://gitlab.com/templayer/mmmerge.git"
-          source_branch: "rodril-fixes"
+          source_repo: "https://gitlab.com/letr.rod/mmmerge.git"
+          source_branch: "Rodril_nightly_build"
           destination_repo: "git@github.com:might-and-magic/mmmerge-backup.git"
           destination_branch: "main"
           destination_ssh_private_key: ${{ secrets.DESTINATION_SSH_PRIVATE_KEY }}
