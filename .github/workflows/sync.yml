@@ -22,7 +22,6 @@ jobs:
   #         destination_branch: "sync"
   #         github_token: ${{ secrets.GITHUB_TOKEN }}
 
-
   sync-to-another-repo:
     runs-on: ubuntu-latest
     steps:
